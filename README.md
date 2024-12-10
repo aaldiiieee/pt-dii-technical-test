@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# 🚀 Button Showcase - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek ini adalah aplikasi React yang dibuat menggunakan Vite. Aplikasi ini mendemonstrasikan penggunaan komponen tombol (`Button`) yang fleksibel dan dapat disesuaikan untuk berbagai kebutuhan desain antarmuka. Komponen ini mendukung berbagai varian seperti warna, ukuran, ikon, dan tooltip.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fitur Utama
 
-## Expanding the ESLint configuration
+- **Variasi Warna Tombol:** Tombol dengan warna `Primary`, `Secondary`, dan `Accent`.
+- **Dukungan Ikon:** Tombol dapat memiliki ikon di sebelah kiri, kanan, atau tanpa ikon.
+- **Ukuran Tombol:** Ukuran tombol yang dapat disesuaikan (`Small`, `Medium`, `Large`).
+- **Tooltip Dinamis:** Tooltip dengan posisi `Top`, `Bottom`, `Left`, dan `Right`.
+- **Dukungan Responsif:** Desain tombol yang responsif untuk berbagai ukuran layar.
+- **Dibangun dengan:** Vite untuk performa yang cepat dan struktur modern.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Teknologi yang Digunakan
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: Framework utama untuk membangun antarmuka pengguna.
+- **Vite**: Alat pembangun proyek yang cepat dan efisien.
+- **TypeScript**: Untuk tipe data yang kuat dan pengembangan yang lebih aman.
+- **Tailwind CSS (Opsional)**: Untuk styling yang mudah dan cepat.
+- **React Icons**: Untuk ikon yang siap pakai.
+- **clsx**: Untuk pengelolaan className yang dinamis.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📂 Struktur Proyek
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+```plaintext
+src/
+├── components/
+│   ├── ui/
+│   │   └── Button.tsx        # Komponen Button utama
+│   ├── template/
+│   │   └── SectionTemplate.tsx # Template untuk setiap bagian demo
+│   └── layouts/
+│       └── AppLayout.tsx     # Layout utama aplikasi
+├── App.tsx                   # Komponen utama aplikasi
+├── main.tsx                  # Entry point aplikasi
+└── index.css                 # Styling global
