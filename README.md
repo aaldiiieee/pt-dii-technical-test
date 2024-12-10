@@ -40,3 +40,30 @@ src/
 ├── App.tsx                   # Komponen utama aplikasi
 ├── main.tsx                  # Entry point aplikasi
 └── index.css                 # Styling global
+```
+
+---
+
+## 🚀 Cara Menjalankan Proyek
+Ikuti langkah-langkah berikut untuk menjalankan proyek di lokal:
+
+1. **Clone repositori ini**:
+   \`\`\`bash
+   git clone https://github.com/$USERNAME/$REPO_NAME.git
+   cd $REPO_NAME
+   \`\`\`
+
+2. **Install dependencies**:
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Jalankan aplikasi**:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+
+4. **Buka di browser**:
+   Kunjungi [http://localhost:5173](http://localhost:5173) untuk melihat aplikasi.
+
+---
