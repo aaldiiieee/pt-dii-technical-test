@@ -50,7 +50,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek di lokal:
 1. **Clone repositori ini**:
    ```bash
    git clone https://github.com/aaldiiieee/pt-dii-technical-test.git
-   cd $REPO_NAME
+   cd pt-dii-technical-test
    ```
 
 2. **Install dependencies**:
